@@ -1,4 +1,7 @@
-# Antimatter Dimensions
+# Antimatter World
+
+Antimatter World is based on Antimatter Dimensions by IvarK and contributors (MIT License).
+Original project: https://github.com/IvarK/AntimatterDimensionsSourceCode
 
 ## Run
 

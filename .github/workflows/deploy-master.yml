@@ -7,13 +7,16 @@ on:
   push:
     branches:
       - master
+  pull_request:
+    branches:
+      - master
   workflow_dispatch:
     branches:
       - master
 
 jobs:
   build:
-    name: Deploy 🚀
+    name: Build & Deploy 🚀
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -21,11 +24,12 @@ jobs:
           lfs: true
       - uses: actions/setup-node@v4
         with:
-          node-version: "14"
+          node-version: "lts/*"
           cache: "npm"
       - run: npm ci
       - run: npm run build:master
-      - uses: JamesIves/github-pages-deploy-action@v4
+      - if: github.event_name != 'pull_request'
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: dist
