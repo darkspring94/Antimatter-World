@@ -20,12 +20,21 @@ export default {
       </div>
     </div>
     <div class="c-info-body">
-      Antimatter Dimensions is an Idle Incremental game created by Finnish developer Hevipelle. Originating as a solo
-      project in 2016, it was expanded upon by a large team of developers and testers from then on.
+      Antimatter World is an Idle Incremental game based on Antimatter Dimensions, originally created by Finnish
+      developer Hevipelle. Originating as a solo project in 2016, Antimatter Dimensions was expanded upon by a large
+      team of developers and testers from then on.
       <br>
       <br>
       The game has unfolding gameplay and multiple prestige layers. The "How to Play" button contains useful
       information about progressing.
+      <br>
+      <br>
+      Antimatter World is based on Antimatter Dimensions by IvarK and contributors (MIT License).
+      <a
+        href="https://github.com/IvarK/AntimatterDimensionsSourceCode"
+        target="_blank"
+        rel="noopener noreferrer"
+      >https://github.com/IvarK/AntimatterDimensionsSourceCode</a>
     </div>
     <div class="l-socials">
       <InformationModalButton
